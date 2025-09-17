@@ -1,0 +1,220 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: url('logo3.jpg') no-repeat center/cover;
+}
+/*logo designing*/
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: flex;
+}
+#logo {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px 45px;
+}
+#navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    background-color: black;
+    height: 200px;
+}
+#navbar ul {
+    display: flex;
+}
+#navbar ul li {
+    list-style: none;
+    font-size: 1rem;
+    padding-left: 8px;
+}
+#navbar ul li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    padding: 3px 33px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif
+}
+#navbar ul li a:hover {
+    color: rgb(0, 0, 0);
+    background-color: white;
+}
+/*home page design*/
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 68px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#home p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #eee;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.9;
+}
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    color: #eee;
+}
+/*For both button*/
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    color: white;
+    background-color: brown;
+    border-radius: 10px;
+    margin: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+/*service page design*/
+#services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    top: 20px;
+    margin-left: 280px;
+    margin-right: 280px;
+    margin-bottom: 30px;
+}
+#services .box img {
+    height: 250px;
+    width: 250px;
+    margin: auto;
+    padding: 20px;
+}
+
+.h-primary-center {
+    text-align: center;
+    padding: 30px;
+    color: aliceblue;
+}
+
+#service-avbl {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#services .box {
+    border: 10px double brown;
+    border-radius: 25px;
+    background-color: white;
+}
+.h-secondary-center {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+}
+p.center {
+    text-align: center;
+    padding: 10px;
+}
+/*about us page design*/
+#about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-us h1.about-head {
+    color: rgb(255, 255, 255);
+    font-size: 3.2rem;
+    font-family: "Poppins", sans-serif;
+    padding: 40px;
+}
+
+p.about-line {
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 40px;
+}
+/*contact form design*/
+#contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contacthead{
+    text-align: center;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+}
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    width: 250px;
+    padding: 40px;
+}
+.contact label{
+    display: block;
+    font-size: 1.4rem;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
+.contact input{
+    font-size: 1.2rem;
+    padding: 5px;
+    border-radius: 6px;
+}
+/*footer section design*/
+
+footer {
+  background: #1a1a1a;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.footer-container p{
+    padding: 5px;
+}
+.logo{
+    padding: 15px;
+    color:  #FF5C00;
+}
+/*for media quiries*/
+@media (max-width: 540px)
+{
+    #navbar ul li a{
+        font-size: 16px;
+        padding: 0.3rem 0.5rem;
+    }
+}
